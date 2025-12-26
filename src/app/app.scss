@@ -1,0 +1,40 @@
+.cursor-dot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9999;
+    margin-top: -4px;
+    margin-left: -4px;
+    will-change: transform;
+}
+
+.cursor-ring {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--accent-color);
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9998;
+    margin-top: -20px;
+    margin-left: -20px;
+    will-change: transform;
+    /* transition: transform 0.1s ease-out;  <-- Logic moved to pure JS/CSS mix or allow JS to handle raw update for smoother feel */
+    transition: transform 0.15s ease-out, width 0.3s, height 0.3s, background-color 0.3s;
+}
+
+/* Hover state for links - can be triggered via JS class addition later */
+body:has(a:hover) .cursor-ring,
+body:has(button:hover) .cursor-ring {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 242, 255, 0.1);
+    border-color: transparent;
+}

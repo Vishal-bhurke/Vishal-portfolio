@@ -1,0 +1,47 @@
+<header [class.scrolled]="isScrolled">
+    <div class="container navbar">
+        <div class="logo">
+            <a href="#">
+                <span class="code-bracket">&lt;</span>
+                <span class="name">VISHAL</span>
+                <span class="code-bracket">/&gt;</span>
+            </a>
+        </div>
+
+        <!-- Desktop Menu -->
+        <nav class="desktop-menu">
+            <ul>
+                <li><a href="#home" (click)="scrollToSection('home')"><span class="nav-number">01</span> // home</a>
+                </li>
+                <li><a href="#about" (click)="scrollToSection('about')"><span class="nav-number">02</span> // about</a>
+                </li>
+                <li><a href="#skills" (click)="scrollToSection('skills')"><span class="nav-number">03</span> //
+                        skills</a></li>
+                <li><a href="#work" (click)="scrollToSection('work')"><span class="nav-number">04</span> // work</a>
+                </li>
+                <li><a href="#experience" (click)="scrollToSection('experience')"><span class="nav-number">05</span> //
+                        experience</a></li>
+                <li><a href="#contact" (click)="scrollToSection('contact')"><span class="nav-number">06</span> //
+                        contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Mobile Button -->
+        <button class="hamburger" (click)="toggleMenu()" [class.active]="isMenuOpen">
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" [class.open]="isMenuOpen">
+        <ul>
+            <li><a href="#home" (click)="closeMenu()"><span class="nav-number">01</span> // home</a></li>
+            <li><a href="#about" (click)="closeMenu()"><span class="nav-number">02</span> // about</a></li>
+            <li><a href="#skills" (click)="closeMenu()"><span class="nav-number">03</span> // skills</a></li>
+            <li><a href="#work" (click)="closeMenu()"><span class="nav-number">04</span> // work</a></li>
+            <li><a href="#experience" (click)="closeMenu()"><span class="nav-number">05</span> // experience</a></li>
+            <li><a href="#contact" (click)="closeMenu()"><span class="nav-number">06</span> // contact</a></li>
+        </ul>
+    </div>
+</header>
