@@ -198,9 +198,8 @@ h1 {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     padding: 15px 0;
 
-
-    /* Laptop fix: If screen is short, make ticker relative so it doesn't overlap text */
-    @media (max-height: 800px) and (min-width: 769px) {
+    /* Laptop/Desktop fix: If screen height is limited, make ticker relative so it doesn't overlap content */
+    @media (max-height: 1200px) and (min-width: 769px) {
         position: relative;
         bottom: auto;
         margin: 12px 0px;

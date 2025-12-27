@@ -26,7 +26,6 @@
     margin-top: -20px;
     margin-left: -20px;
     will-change: transform;
-    /* transition: transform 0.1s ease-out;  <-- Logic moved to pure JS/CSS mix or allow JS to handle raw update for smoother feel */
     transition: transform 0.15s ease-out, width 0.3s, height 0.3s, background-color 0.3s;
 }
 

@@ -40,10 +40,32 @@ export class App implements OnInit {
         mirror: true
       });
 
+      // Mouse events
       window.addEventListener('mousemove', (e) => {
         this.cursorX = e.clientX;
         this.cursorY = e.clientY;
         this.updateCursor();
+      });
+
+      // Touch events for mobile
+      window.addEventListener('touchstart', (e) => {
+        if (e.touches.length > 0) {
+          this.cursorX = e.touches[0].clientX;
+          this.cursorY = e.touches[0].clientY;
+          this.updateCursor();
+        }
+      });
+
+      window.addEventListener('touchmove', (e) => {
+        if (e.touches.length > 0) {
+          this.cursorX = e.touches[0].clientX;
+          this.cursorY = e.touches[0].clientY;
+          this.updateCursor();
+        }
+      });
+
+      window.addEventListener('touchend', () => {
+        // Keep cursor at last position after touch ends
       });
     }
   }
