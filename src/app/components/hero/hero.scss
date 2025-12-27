@@ -1,6 +1,7 @@
 .hero {
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
+    /* Changed from height to min-height to prevent cut-off */
     width: 100%;
     display: flex;
     align-items: center;
@@ -8,6 +9,13 @@
     overflow: hidden;
     background-color: var(--bg-color);
     padding-top: var(--nav-height);
+
+    @media (max-width: 768px) {
+        height: auto;
+        padding-bottom: 50px;
+        overflow-y: auto;
+        /* Allow scrolling content if needed */
+    }
 }
 
 /* Background Grid Animation */
@@ -52,6 +60,13 @@
     position: relative;
     z-index: 2;
     width: 100%;
+
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 20px;
+    }
 }
 
 .greeting {
@@ -109,7 +124,8 @@ h1 {
     font-size: 1.1rem;
     color: var(--text-secondary);
     line-height: 1.6;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    /* Reduced from 50px */
 
     .highlight {
         color: var(--accent-color);
@@ -121,6 +137,16 @@ h1 {
     display: flex;
     gap: 20px;
 
+    @media (max-width: 768px) {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        /* Removed padding to align with other content */
+        order: 3;
+        margin: 12px 0px;
+        /* Render after ticker */
+    }
+
     .btn {
         padding: 15px 40px;
         border-radius: 5px;
@@ -129,6 +155,13 @@ h1 {
         letter-spacing: 1px;
         position: relative;
         overflow: hidden;
+        text-align: center;
+        /* Ensure text is centered */
+
+        @media (max-width: 768px) {
+            width: 100%;
+            padding: 15px 20px;
+        }
 
         &.primary {
             background-color: transparent;
@@ -164,6 +197,25 @@ h1 {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     padding: 15px 0;
+
+
+    /* Laptop fix: If screen is short, make ticker relative so it doesn't overlap text */
+    @media (max-height: 800px) and (min-width: 769px) {
+        position: relative;
+        bottom: auto;
+        margin: 12px 0px;
+    }
+
+    @media (max-width: 768px) {
+        position: relative;
+        bottom: auto;
+        left: 0;
+        width: 100%;
+        transform: none;
+        margin: 12px 0px;
+        order: 2;
+        /* Render before buttons */
+    }
 
     .ticker-content {
         display: flex;
