@@ -49,5 +49,24 @@
                 font-size: 0.8rem;
             }
         }
+
+        .sub-list {
+            margin-left: 20px;
+            margin-top: 5px;
+
+            li {
+                font-size: 0.9rem;
+                margin-bottom: 8px;
+                color: var(--text-secondary);
+                opacity: 0.9;
+
+                &::before {
+                    content: '•';
+                    color: var(--accent-color);
+                    margin-right: 8px;
+                    font-size: 0.7rem;
+                }
+            }
+        }
     }
 }
