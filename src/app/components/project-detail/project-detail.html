@@ -1,0 +1,595 @@
+<div class="project-detail">
+    <div class="container">
+        <!-- Back Button -->
+        <button class="back-button" (click)="goBack()">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M19 12H5M12 19l-7-7 7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            Back to Projects
+        </button>
+
+        <!-- BMS Project -->
+        <div *ngIf="projectType === 'bms'">
+            <!-- Project Header -->
+            <div class="project-header" data-aos="fade-up">
+                <div class="project-icon">🏢</div>
+                <h1>Building Management System (BMS)</h1>
+                <p class="project-meta">Core Platform</p>
+                <p class="project-role">Role: Frontend Developer | Type: Enterprise IoT / Smart Building Platform</p>
+            </div>
+
+            <!-- Main Project Overview -->
+            <div class="main-overview" data-aos="fade-up">
+                <h2>Project Overview</h2>
+                <p class="overview-text">Developed a centralized Building Management System that enables facility teams
+                    to monitor, control, and analyze multiple building systems from a single dashboard.</p>
+
+                <div class="overview-grid">
+                    <div class="overview-section">
+                        <h3>What the system does</h3>
+                        <ul>
+                            <li>Provides real-time visibility into building operations</li>
+                            <li>Centralizes monitoring of IoT-connected assets</li>
+                            <li>Supports operational control, alerts, and analytics</li>
+                        </ul>
+                    </div>
+
+                    <div class="overview-section">
+                        <h3>My Contributions</h3>
+                        <ul>
+                            <li>Designed and developed responsive Angular dashboards</li>
+                            <li>Implemented role-based access for different user types</li>
+                            <li>Built alarm handling and notification views</li>
+                            <li>Integrated real-time IoT data streams into UI</li>
+                            <li>Focused on intuitive UX for quick issue identification</li>
+                        </ul>
+                    </div>
+
+                    <div class="overview-section impact-section">
+                        <h3>Impact</h3>
+                        <ul>
+                            <li>Improved operational visibility and response time</li>
+                            <li>Reduced dependency on manual monitoring</li>
+                            <li>Enabled data-driven facility management</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tech-stack">
+                    <span>Angular</span>
+                    <span>TypeScript</span>
+                    <span>Highcharts</span>
+                    <span>Bootstrap</span>
+                    <span>IoT Integration</span>
+                    <span>Real-time Data Streaming</span>
+                </div>
+            </div>
+
+            <!-- Sub-Modules Section -->
+            <div class="sub-modules-header" data-aos="fade-up">
+                <h2>Sub-Modules & Features</h2>
+                <p>The BMS platform comprises multiple specialized monitoring modules:</p>
+            </div>
+
+            <!-- BMS Modules Grid -->
+            <div class="modules-grid">
+                <!--Energy Management -->
+                <div class="module-card" data-aos="fade-up">
+                    <div class="module-icon">⚡</div>
+                    <h2>Energy Management System</h2>
+                    <p class="module-type">Energy Analytics & Optimization Platform</p>
+
+                    <div class="module-section">
+                        <h3>Overview</h3>
+                        <p>Built an Energy Management System to monitor, analyze, and optimize energy consumption across
+                            assets, floors, and buildings.</p>
+                    </div>
+
+                    <div class="module-section">
+                        <h3>What the system does</h3>
+                        <ul>
+                            <li>Tracks real-time and historical energy consumption</li>
+                            <li>Displays demand trends and power quality parameters</li>
+                            <li>Supports energy optimization and compliance reporting</li>
+                        </ul>
+                    </div>
+
+                    <div class="module-section">
+                        <h3>My Contributions</h3>
+                        <ul>
+                            <li>Developed interactive dashboards with charts and comparisons</li>
+                            <li>Visualized consumption at asset, floor, and building levels</li>
+                            <li>Implemented historical trend analysis</li>
+                            <li>Enabled exportable reports for decision-making</li>
+                        </ul>
+                    </div>
+
+                    <div class="module-section impact">
+                        <h3>Impact</h3>
+                        <ul>
+                            <li>Helped stakeholders identify energy inefficiencies</li>
+                            <li>Supported cost optimization and demand management</li>
+                            <li>Improved transparency of energy usage patterns</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Water Monitoring -->
+                <div class="module-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="module-icon">💧</div>
+                    <h2>Water Monitoring System</h2>
+                    <p class="module-type">Utility Monitoring Platform</p>
+
+                    <div class="module-section">
+                        <h3>Overview</h3>
+                        <p>Designed frontend interfaces to monitor and manage water usage across facilities, focusing on
+                            efficiency and loss detection.</p>
+                    </div>
+
+                    <div class="module-section">
+                        <h3>What the system does</h3>
+                        <ul>
+                            <li>Tracks water consumption and flow rates</li>
+                            <li>Monitors tank levels and leakage indicators</li>
+                            <li>Identifies abnormal usage patterns</li>
+                        </ul>
+                    </div>
+
+                    <div class="module-section">
+                        <h3>My Contributions</h3>
+                        <ul>
+                            <li>Built dashboards for real-time and historical water data</li>
+                            <li>Implemented trend graphs and threshold-based alerts</li>
+                            <li>Designed visual indicators for leakage and losses</li>
+                            <li>Focused on clarity and quick issue identification</li>
+                        </ul>
+                    </div>
+
+                    <div class="module-section impact">
+                        <h3>Impact</h3>
+                        <ul>
+                            <li>Improved water efficiency tracking</li>
+                            <li>Enabled early detection of leaks and losses</li>
+                            <li>Supported sustainable resource management</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Genset Monitoring -->
+                <div class="module-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="module-icon">🔋</div>
+                    <h2>Genset Monitoring System</h2>
+                    <p class="module-type">Power Backup & Reliability Monitoring</p>
+
+                    <div class="module-section">
+                        <h3>Overview</h3>
+                        <p>Created monitoring screens for diesel generator systems to ensure backup power reliability
+                            and preventive maintenance.</p>
+                    </div>
+
+                    <div class="module-section">
+                        <h3>What the system does</h3>
+                        <ul>
+                            <li>Monitors running status, load, and fuel levels</li>
+                            <li>Tracks electrical parameters and alarms</li>
+                            <li>Stores historical performance data</li>
+                        </ul>
+                    </div>
+
+                    <div class="module-section">
+                        <h3>My Contributions</h3>
+                        <ul>
+                            <li>Designed real-time status dashboards</li>
+                            <li>Visualized voltage, frequency, load, and fuel data</li>
+                            <li>Implemented alarm views and trend analysis</li>
+                            <li>Focused on clear, color-coded status indicators</li>
+                        </ul>
+                    </div>
+
+                    <div class="module-section impact">
+                        <h3>Impact</h3>
+                        <ul>
+                            <li>Improved backup power reliability</li>
+                            <li>Supported preventive maintenance planning</li>
+                            <li>Reduced risk of unexpected power failures</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Busbar Monitoring -->
+                <div class="module-card" data-aos="fade-up">
+                    <div class="module-icon">🔥</div>
+                    <h2>Busbar Monitoring System</h2>
+                    <p class="module-type">Electrical Safety & Monitoring Platform</p>
+
+                    <div class="module-section">
+                        <h3>Overview</h3>
+                        <p>Developed dashboards to monitor the health and safety of busbar systems in electrical
+                            infrastructure.</p>
+                    </div>
+
+                    <div class="module-section">
+                        <h3>What the system does</h3>
+                        <ul>
+                            <li>Tracks temperature and current levels</li>
+                            <li>Detects abnormal conditions</li>
+                            <li>Provides early warning for potential faults</li>
+                        </ul>
+                    </div>
+
+                    <div class="module-section">
+                        <h3>My Contributions</h3>
+                        <ul>
+                            <li>Designed dashboards for real-time busbar health data</li>
+                            <li>Implemented alert visualization and trend graphs</li>
+                            <li>Focused on early fault detection UI patterns</li>
+                        </ul>
+                    </div>
+
+                    <div class="module-section impact">
+                        <h3>Impact</h3>
+                        <ul>
+                            <li>Improved electrical safety</li>
+                            <li>Reduced risk of equipment damage</li>
+                            <li>Enhanced operational reliability</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sensors Platform -->
+                <div class="module-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="module-icon">🌡️</div>
+                    <h2>Sensors Monitoring Platform</h2>
+                    <p class="module-type">Unified IoT Sensor Dashboard</p>
+
+                    <div class="module-section">
+                        <h3>Overview</h3>
+                        <p>Built a scalable frontend platform to monitor multiple sensor types across buildings and
+                            industrial assets.</p>
+                    </div>
+
+                    <div class="module-section">
+                        <h3>What the system does</h3>
+                        <ul>
+                            <li>Aggregates data from diverse field sensors</li>
+                            <li>Displays real-time and historical readings</li>
+                            <li>Enables configurable alerts</li>
+                        </ul>
+                    </div>
+
+                    <div class="module-section">
+                        <h3>My Contributions</h3>
+                        <ul>
+                            <li>Designed scalable, modular dashboard layouts</li>
+                            <li>Built real-time status cards for sensor monitoring</li>
+                            <li>Implemented configurable alert thresholds</li>
+                            <li>Ensured performance with high-volume data streams</li>
+                        </ul>
+                    </div>
+
+                    <div class="module-section impact">
+                        <h3>Impact</h3>
+                        <ul>
+                            <li>Simplified monitoring of distributed sensors</li>
+                            <li>Enabled faster issue detection</li>
+                            <li>Improved operational awareness</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Digital Twin -->
+                <div class="module-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="module-icon">🧩</div>
+                    <h2>Digital Twin Visualization</h2>
+                    <p class="module-type">Digital Twin & Visualization Platform</p>
+
+                    <div class="module-section">
+                        <h3>Overview</h3>
+                        <p>Worked on digital twin interfaces that map live IoT sensor data onto visual representations
+                            of buildings and equipment.</p>
+                    </div>
+
+                    <div class="module-section">
+                        <h3>What the system does</h3>
+                        <ul>
+                            <li>Visualizes physical assets digitally</li>
+                            <li>Displays real-time operational data on layouts</li>
+                            <li>Shows system relationships and dependencies</li>
+                        </ul>
+                    </div>
+
+                    <div class="module-section">
+                        <h3>My Contributions</h3>
+                        <ul>
+                            <li>Developed frontend interfaces for digital twin views</li>
+                            <li>Integrated live sensor data into visual layouts</li>
+                            <li>Focused on intuitive, data-driven visualization</li>
+                            <li>Enhanced user understanding of asset behavior</li>
+                        </ul>
+                    </div>
+
+                    <div class="module-section impact">
+                        <h3>Impact</h3>
+                        <ul>
+                            <li>Improved situational awareness</li>
+                            <li>Enabled faster diagnostics</li>
+                            <li>Helped users understand complex system interactions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- EQUIP Project - NEW CONTENT -->
+        <div *ngIf="projectType === 'equip'">
+            <!-- Project Header -->
+            <div class="project-header" data-aos="fade-up">
+                <div class="project-icon">🚜</div>
+                <h1>Tor Equip</h1>
+                <p class="project-meta">Equipment & Fleet Intelligence Platform</p>
+                <p class="project-role">Role: Frontend Developer | Domain: IoT, Telematics, Fleet & Equipment
+                    Intelligence</p>
+                <p class="project-industry">Industry: Agriculture, Industrial & Heavy Equipment</p>
+            </div>
+
+            <!-- Main Project Overview -->
+            <div class="main-overview" data-aos="fade-up">
+                <h2>Project Overview</h2>
+                <p class="overview-text">Tor Equip is a unified equipment intelligence platform designed to monitor,
+                    manage, and optimize agricultural, industrial, and heavy machinery through real-time IoT and
+                    telematics data. The platform enables customers to track equipment location, performance,
+                    utilization, alerts, and compliance workflows—helping improve productivity, asset security, and
+                    operational efficiency across diverse use cases.</p>
+
+                <div class="overview-grid">
+                    <div class="overview-section">
+                        <h3>What the Platform Does</h3>
+                        <ul>
+                            <li>Real-time GPS tracking of equipment and fleets</li>
+                            <li>Performance analytics and utilization insights</li>
+                            <li>Geofencing and theft prevention</li>
+                            <li>Work progress and field analytics</li>
+                            <li>Equipment diagnostics and service workflows</li>
+                            <li>Compliance and government portal data synchronization</li>
+                        </ul>
+                    </div>
+
+                    <div class="overview-section">
+                        <h3>My Role & Responsibilities</h3>
+                        <ul>
+                            <li>Designed and developed scalable Angular dashboards</li>
+                            <li>Built data-driven UIs for real-time and historical insights</li>
+                            <li>Implemented map-based tracking and visualization</li>
+                            <li>Focused on performance optimization for high-frequency IoT data</li>
+                            <li>Ensured intuitive UX for complex operational workflows</li>
+                        </ul>
+                    </div>
+
+                    <div class="overview-section impact-section">
+                        <h3>Key Frontend Focus Areas</h3>
+                        <ul>
+                            <li>Real-time IoT & telematics data visualization</li>
+                            <li>Map-based tracking, route replay & geofence interaction</li>
+                            <li>Scalable dashboards for multi-equipment environments</li>
+                            <li>User-friendly analytics, diagnostics & alert workflows</li>
+                            <li>Performance-optimized UI for high-frequency updates</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tech-stack">
+                    <span>Angular</span>
+                    <span>TypeScript</span>
+                    <span>Google Maps API</span>
+                    <span>Data Tables</span>
+                    <span>IoT Integration</span>
+                    <span>Real-time Telematics</span>
+                </div>
+            </div>
+
+            <!-- Sub-Modules Section -->
+            <div class="sub-modules-header" data-aos="fade-up">
+                <h2>Platform Features & Modules</h2>
+                <p>The Tor Equip platform comprises multiple specialized monitoring and analytics modules:</p>
+            </div>
+
+            <!-- Equip Modules Grid -->
+            <div class="modules-grid">
+                <!-- Agricultural Equipment -->
+                <div class="module-card" data-aos="fade-up">
+                    <div class="module-icon">🌾</div>
+                    <h2>Agricultural Equipment Monitoring</h2>
+                    <p class="module-type">Farm Machinery Intelligence</p>
+
+                    <div class="module-section">
+                        <h3>Overview</h3>
+                        <p>Developed interactive dashboards to monitor agricultural machinery across fields and
+                            operations.</p>
+                    </div>
+
+                    <div class="module-section">
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>Live GPS location tracking</li>
+                            <li>Route replay and movement history</li>
+                            <li>Distance covered and run-hour analytics</li>
+                            <li>On/Off status and machine activity insights</li>
+                            <li>Work progress visibility across agricultural fields</li>
+                        </ul>
+                    </div>
+
+                    <div class="module-section">
+                        <h3>Special Integration</h3>
+                        <ul>
+                            <li>Supported government portal data synchronization for subsidy compliance</li>
+                            <li>Operational and regulatory reporting</li>
+                        </ul>
+                    </div>
+
+                    <div class="module-section impact">
+                        <h3>Impact</h3>
+                        <ul>
+                            <li>Improved visibility into real-world machine performance</li>
+                            <li>Simplified compliance and reporting for end users</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Geofencing -->
+                <div class="module-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="module-icon">📍</div>
+                    <h2>Geofencing & Theft Prevention</h2>
+                    <p class="module-type">Asset Security Platform</p>
+
+                    <div class="module-section">
+                        <h3>Overview</h3>
+                        <p>Built geofence management and alert visualization features to enhance asset security.</p>
+                    </div>
+
+                    <div class="module-section">
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>Configurable geofence zones (fields, farms, restricted areas)</li>
+                            <li>Entry/exit alert notifications</li>
+                            <li>Unauthorized movement detection</li>
+                            <li>Live GPS tracking combined with alert workflows</li>
+                        </ul>
+                    </div>
+
+                    <div class="module-section impact">
+                        <h3>Impact</h3>
+                        <ul>
+                            <li>Faster theft detection and recovery</li>
+                            <li>Reduced risk of unauthorized equipment usage</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Work Progress -->
+                <div class="module-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="module-icon">🌱</div>
+                    <h2>Work Progress & Field Analytics</h2>
+                    <p class="module-type">Productivity Intelligence</p>
+
+                    <div class="module-section">
+                        <h3>Overview</h3>
+                        <p>Implemented analytics views to measure and visualize work efficiency across agricultural
+                            fields.</p>
+                    </div>
+
+                    <div class="module-section">
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>Route replay with field overlays</li>
+                            <li>Distance and area-covered visualization</li>
+                            <li>Equipment utilization time per field</li>
+                            <li>Productivity insights for cultivation operations</li>
+                        </ul>
+                    </div>
+
+                    <div class="module-section impact">
+                        <h3>Impact</h3>
+                        <ul>
+                            <li>Helped users track work completion and efficiency</li>
+                            <li>Enabled data-driven planning and optimization</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Chiller Monitoring -->
+                <div class="module-card" data-aos="fade-up">
+                    <div class="module-icon">❄️</div>
+                    <h2>Chiller Monitoring & Diagnostics</h2>
+                    <p class="module-type">Industrial Cooling Systems</p>
+
+                    <div class="module-section">
+                        <h3>Overview</h3>
+                        <p>Designed dashboards for monitoring industrial chillers and cooling systems.</p>
+                    </div>
+
+                    <div class="module-section">
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>Live operating parameters</li>
+                            <li>Threshold breach indicators</li>
+                            <li>Historical performance trends</li>
+                            <li>Downtime and anomaly alerts</li>
+                            <li>Warranty and service scheduling support</li>
+                        </ul>
+                    </div>
+
+                    <div class="module-section impact">
+                        <h3>Impact</h3>
+                        <ul>
+                            <li>Enabled proactive diagnostics</li>
+                            <li>Reduced unplanned downtime</li>
+                            <li>Improved compliance and service efficiency</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Fleet Monitoring -->
+                <div class="module-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="module-icon">🚧</div>
+                    <h2>Heavy Equipment & Fleet Monitoring</h2>
+                    <p class="module-type">Construction & Industrial Fleet</p>
+
+                    <div class="module-section">
+                        <h3>Overview</h3>
+                        <p>Developed map-based fleet views for industrial and construction equipment including
+                            Excavators, Dumpers, Cranes, Gensets, and Compressors.</p>
+                    </div>
+
+                    <div class="module-section">
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>Near real-time GPS tracking</li>
+                            <li>Speed and fuel consumption insights</li>
+                            <li>Productive vs idle run-hour analysis</li>
+                            <li>Equipment status visualization</li>
+                        </ul>
+                    </div>
+
+                    <div class="module-section impact">
+                        <h3>Impact</h3>
+                        <ul>
+                            <li>Improved fleet utilization</li>
+                            <li>Supported operational planning and productivity optimization</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Alerts & Service -->
+                <div class="module-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="module-icon">🚨</div>
+                    <h2>Alerts, Investigations & Service Support</h2>
+                    <p class="module-type">Maintenance & Customer Service</p>
+
+                    <div class="module-section">
+                        <h3>Overview</h3>
+                        <p>Built robust alerting and investigation workflows to support maintenance and customer service
+                            teams.</p>
+                    </div>
+
+                    <div class="module-section">
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>Configurable alerts for threshold breaches, fuel theft, abnormal behavior</li>
+                            <li>Service schedule notifications</li>
+                            <li>Investigation views for alarm analysis</li>
+                            <li>Parameter deviation insights for root-cause analysis</li>
+                        </ul>
+                    </div>
+
+                    <div class="module-section impact">
+                        <h3>Impact</h3>
+                        <ul>
+                            <li>Enabled proactive maintenance</li>
+                            <li>Improved customer service response times</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

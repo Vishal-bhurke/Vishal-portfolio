@@ -1,25 +1,15 @@
 import { Component, Inject, OnInit, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
+import { RouterOutlet } from '@angular/router';
 import { Header } from './components/header/header';
-import { Hero } from './components/hero/hero';
-import { About } from './components/about/about';
-import { Experience } from './components/experience/experience';
-import { Projects } from './components/projects/projects';
-import { Skills } from './components/skills/skills';
-import { Contact } from './components/contact/contact';
 import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
-    Header,
-    Hero,
-    About,
-    Experience,
-    Projects,
-    Skills,
-    Contact
+    RouterOutlet,
+    Header
   ],
   templateUrl: './app.html',
   styleUrl: './app.scss'
