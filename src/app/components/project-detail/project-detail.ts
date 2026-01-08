@@ -11,7 +11,7 @@ import { Location, CommonModule } from '@angular/common';
 })
 export class ProjectDetail implements OnInit {
   projectId: string = '';
-  projectType: 'bms' | 'equip' = 'bms';
+  projectType: 'bms' | 'equip' | 'tor360' = 'bms';
 
   constructor(
     private route: ActivatedRoute,
@@ -21,7 +21,7 @@ export class ProjectDetail implements OnInit {
 
   ngOnInit() {
     this.projectId = this.route.snapshot.params['id'];
-    this.projectType = this.projectId as 'bms' | 'equip';
+    this.projectType = this.projectId as 'bms' | 'equip' | 'tor360';
   }
 
   goBack() {

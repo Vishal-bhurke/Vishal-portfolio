@@ -591,5 +591,235 @@
                 </div>
             </div>
         </div>
+
+        <!-- Tor360 Project -->
+        <div *ngIf="projectType === 'tor360'">
+            <!-- Project Header -->
+            <div class="project-header" data-aos="fade-up">
+                <div class="project-icon">🧩</div>
+                <h1>Tor360 – Service & Ticket Management Module</h1>
+                <p class="project-meta">Service Operations & Ticket Management</p>
+                <p class="project-role">Role: Frontend Developer | Part of: Tor Equip – Equipment & Fleet Intelligence
+                    Platform</p>
+            </div>
+
+            <!-- Main Project Overview -->
+            <div class="main-overview" data-aos="fade-up">
+                <h2>Module Overview</h2>
+                <p class="overview-text">Tor360 is an integrated service and ticket management module within the Tor Equip
+                    platform, designed to manage equipment issues, service requests, investigations, and resolution
+                    workflows in a structured and traceable manner. The module provides a 360-degree operational view of
+                    assets by connecting real-time alerts, field issues, service actions, and maintenance history into a
+                    unified workflow.</p>
+
+                <div class="overview-grid">
+                    <div class="overview-section">
+                        <h3>What Tor360 Does</h3>
+                        <ul>
+                            <li>Centralizes service tickets generated from system alerts, manual user requests, and
+                                maintenance schedules</li>
+                            <li>Tracks the full lifecycle of tickets from creation to closure</li>
+                            <li>Enables investigation, assignment, resolution, and verification</li>
+                            <li>Maintains service history linked to equipment and assets</li>
+                        </ul>
+                    </div>
+
+                    <div class="overview-section">
+                        <h3>My Contributions</h3>
+                        <ul>
+                            <li>Designed and developed Angular-based ticket management dashboards</li>
+                            <li>Built list, detail, and workflow views for service tickets</li>
+                            <li>Implemented status-based flows (Open, In Progress, Resolved, Closed)</li>
+                            <li>Integrated tickets with alerts, assets, and equipment data</li>
+                            <li>Focused on clear UX for service teams and operations users</li>
+                        </ul>
+                    </div>
+
+                    <div class="overview-section impact-section">
+                        <h3>Key Frontend Focus Areas</h3>
+                        <ul>
+                            <li>Scalable ticket listing & filtering</li>
+                            <li>Clean detail views for complex operational data</li>
+                            <li>Seamless integration with IoT alerts & assets</li>
+                            <li>User-friendly workflows for service teams</li>
+                            <li>Performance-optimized UI for high-volume tickets</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tech-stack">
+                    <span>Angular</span>
+                    <span>TypeScript</span>
+                    <span>RxJS</span>
+                    <span>IoT Integration</span>
+                    <span>Real-time Data Streaming</span>
+                </div>
+            </div>
+
+            <!-- Sub-Modules Section -->
+            <div class="sub-modules-header" data-aos="fade-up">
+                <h2>Module Features</h2>
+                <p>The Tor360 platform comprises multiple specialized features for comprehensive ticket management:</p>
+            </div>
+
+            <!-- Tor360 Modules Grid -->
+            <div class="modules-grid">
+                <!-- Ticket Creation & Classification -->
+                <div class="module-card" data-aos="fade-up">
+                    <div class="module-icon">🎫</div>
+                    <h2>Ticket Creation & Classification</h2>
+                    <p class="module-type">Automated & Manual Ticket Management</p>
+
+                    <div class="module-section">
+                        <h3>Overview</h3>
+                        <p>Built comprehensive ticket creation and classification system supporting both automated and manual
+                            ticket generation with intelligent categorization.</p>
+                    </div>
+
+                    <div class="module-section">
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>Automatic ticket creation from IoT alerts, threshold breaches, and abnormal behavior
+                                detection</li>
+                            <li>Manual ticket creation by users</li>
+                            <li>Categorization by asset/equipment, issue type, priority, severity, and impact</li>
+                        </ul>
+                    </div>
+
+                    <div class="module-section impact">
+                        <h3>Impact</h3>
+                        <ul>
+                            <li>Reduced manual tracking of issues</li>
+                            <li>Improved visibility into operational problems</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Ticket Workflow & Status Management -->
+                <div class="module-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="module-icon">🔄</div>
+                    <h2>Ticket Workflow & Status Management</h2>
+                    <p class="module-type">Lifecycle & SLA Management</p>
+
+                    <div class="module-section">
+                        <h3>Overview</h3>
+                        <p>Implemented comprehensive workflow management system with status-based lifecycle tracking and SLA
+                            monitoring.</p>
+                    </div>
+
+                    <div class="module-section">
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>Status-based ticket lifecycle: Open → In Progress → Resolved → Closed</li>
+                            <li>Assignment to service teams or engineers</li>
+                            <li>SLA tracking and priority indicators</li>
+                            <li>Timeline view for ticket activity and updates</li>
+                        </ul>
+                    </div>
+
+                    <div class="module-section impact">
+                        <h3>Impact</h3>
+                        <ul>
+                            <li>Improved accountability</li>
+                            <li>Faster issue resolution</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Investigation & Diagnostics Views -->
+                <div class="module-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="module-icon">🔍</div>
+                    <h2>Investigation & Diagnostics Views</h2>
+                    <p class="module-type">Data-Driven Troubleshooting</p>
+
+                    <div class="module-section">
+                        <h3>Overview</h3>
+                        <p>Developed detailed investigation interfaces with integrated diagnostics and root-cause analysis
+                            capabilities.</p>
+                    </div>
+
+                    <div class="module-section">
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>Detailed ticket view with linked alerts and sensor data</li>
+                            <li>Parameter deviations and trends</li>
+                            <li>Historical context of similar issues</li>
+                            <li>Investigation notes and observations</li>
+                            <li>Root-cause analysis support</li>
+                        </ul>
+                    </div>
+
+                    <div class="module-section impact">
+                        <h3>Impact</h3>
+                        <ul>
+                            <li>Enabled data-driven troubleshooting</li>
+                            <li>Reduced repeat failures</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service & Maintenance Tracking -->
+                <div class="module-card" data-aos="fade-up">
+                    <div class="module-icon">🧰</div>
+                    <h2>Service & Maintenance Tracking</h2>
+                    <p class="module-type">Maintenance History & Documentation</p>
+
+                    <div class="module-section">
+                        <h3>Overview</h3>
+                        <p>Built comprehensive service tracking system with maintenance history and documentation
+                            capabilities.</p>
+                    </div>
+
+                    <div class="module-section">
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>Service action logging</li>
+                            <li>Maintenance history per asset</li>
+                            <li>Warranty and service reference linkage</li>
+                            <li>Resolution verification and closure workflows</li>
+                        </ul>
+                    </div>
+
+                    <div class="module-section impact">
+                        <h3>Impact</h3>
+                        <ul>
+                            <li>Improved maintenance traceability</li>
+                            <li>Better service documentation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Operational Insights & Reporting -->
+                <div class="module-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="module-icon">📊</div>
+                    <h2>Operational Insights & Reporting</h2>
+                    <p class="module-type">Analytics & Business Intelligence</p>
+
+                    <div class="module-section">
+                        <h3>Overview</h3>
+                        <p>Created analytics dashboards and reporting features to provide operational insights and support
+                            decision-making.</p>
+                    </div>
+
+                    <div class="module-section">
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>Ticket analytics dashboards: Open vs closed tickets, issue frequency, resolution time
+                                trends</li>
+                            <li>Asset-wise and category-wise breakdowns</li>
+                            <li>Support for operational review and planning</li>
+                        </ul>
+                    </div>
+
+                    <div class="module-section impact">
+                        <h3>Impact</h3>
+                        <ul>
+                            <li>Helped teams identify recurring issues</li>
+                            <li>Supported preventive maintenance strategies</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
