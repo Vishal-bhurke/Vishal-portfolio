@@ -9,12 +9,12 @@
 }
 
 .project-card {
-    height: 400px;
+    height: 500px; // Increased from 400px to accommodate larger scrollable area
     perspective: 1000px;
     cursor: default;
 
     @media (max-width: 768px) {
-        height: 450px; // Slightly taller on mobile for better content visibility
+        height: 550px; // Increased from 450px for better content visibility on mobile
     }
 
     &:hover .card-inner {
@@ -146,7 +146,7 @@
     .modules-list {
         width: 100%;
         margin-bottom: 15px;
-        max-height: 180px;
+        max-height: 280px; // Increased from 180px for better visibility
         overflow-y: auto;
         padding-right: 8px; // Add padding for scrollbar visibility
 
@@ -165,7 +165,7 @@
 
         // Mobile improvements
         @media (max-width: 768px) {
-            max-height: 250px; // Increase height on mobile
+            max-height: 320px; // Increased from 250px for better visibility on mobile
             padding-right: 12px; // More padding for better scrollbar visibility
             
             &::-webkit-scrollbar {
