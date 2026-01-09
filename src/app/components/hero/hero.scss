@@ -184,6 +184,27 @@ h1 {
                 color: var(--text-primary);
             }
         }
+
+        &.resume-btn {
+            background-color: transparent;
+            border: 1px solid var(--accent-secondary);
+            color: var(--accent-secondary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+
+            svg {
+                width: 16px;
+                height: 16px;
+            }
+
+            &:hover {
+                background-color: rgba(112, 0, 255, 0.1);
+                box-shadow: 0 0 20px rgba(112, 0, 255, 0.3);
+                border-color: var(--accent-secondary);
+            }
+        }
     }
 }
 
