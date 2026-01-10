@@ -1,8 +1,11 @@
 import { Component, Inject, OnInit, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet, NavigationEnd } from '@angular/router';
 import { Header } from './components/header/header';
+import { filter } from 'rxjs/operators';
 import * as AOS from 'aos';
+
+declare let gtag: Function;
 
 @Component({
   selector: 'app-root',
@@ -19,7 +22,23 @@ export class App implements OnInit {
   cursorX = 0;
   cursorY = 0;
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) { }
+  constructor(
+    @Inject(PLATFORM_ID) private platformId: Object,
+    private router: Router
+  ) {
+    // Track Angular route changes for Google Analytics
+    if (isPlatformBrowser(this.platformId)) {
+      this.router.events
+        .pipe(filter(event => event instanceof NavigationEnd))
+        .subscribe((event: NavigationEnd) => {
+          if (typeof gtag !== 'undefined') {
+            gtag('config', 'G-VHJTF4GGVK', {
+              page_path: event.urlAfterRedirects
+            });
+          }
+        });
+    }
+  }
 
   ngOnInit() {
     if (isPlatformBrowser(this.platformId)) {
