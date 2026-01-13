@@ -9,7 +9,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 })
 export class Testimonials implements OnInit, OnDestroy {
   currentSlide = 0;
-  totalSlides = 3;
+  totalSlides = 5;
   private autoPlayInterval: any;
   private autoPlayDelay = 5000; // 5 seconds
 
